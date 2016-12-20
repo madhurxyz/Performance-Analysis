@@ -43,7 +43,12 @@ def get_words_list(file_name, number_of_words):
   word_string = ' '.join(lines)
   no_punctuation = remove_punctuation(word_string)
   words_list = no_punctuation.split()
-  return words_list
+
+  #the benchmark list is created with this loop
+  benchmark_list = []
+  for index in range(0, number_of_words):
+      
+  return benchmark_list
 
 def my_app():
     words_list = get_words_list('tf.txt')
