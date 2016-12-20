@@ -3,7 +3,7 @@ import time
 from histogram import get_words_list
 from histogram import create_histogram
 
-def benchmark(file_name):
+def performance(file_name):
     t0 = time.time()
     hundred_list = get_words_list(file_name, 100)
     hundred_hgram = create_histogram(hundred_list)
@@ -16,4 +16,4 @@ def benchmark(file_name):
 
 if __name__ == '__main__':
     file_name = str(sys.argv[1])
-    benchmark(file_name)
+    performance(file_name)
