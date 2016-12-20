@@ -47,7 +47,7 @@ def get_words_list(file_name, number_of_words):
   #the benchmark list is created with this loop
   benchmark_list = []
   for index in range(0, number_of_words):
-      
+      benchmark_list.append(words_list[index])
   return benchmark_list
 
 def my_app():
