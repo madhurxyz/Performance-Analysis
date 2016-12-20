@@ -1,4 +1,7 @@
 import sys
+from histogram import get_words_list
+from histogram import create_histogram
+
 def benchmark(file_name):
     return "Hello World"
 
