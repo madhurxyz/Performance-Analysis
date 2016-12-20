@@ -1,4 +1,5 @@
 import sys
+import time
 from histogram import get_words_list
 from histogram import create_histogram
 
