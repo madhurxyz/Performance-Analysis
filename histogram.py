@@ -37,7 +37,7 @@ def remove_punctuation(word_string):
             no_punctuation += character
     return no_punctuation
 
-def get_words_list(file_name):
+def get_words_list(file_name, number_of_words):
   f= open(file_name)
   lines = f.readlines()
   word_string = ' '.join(lines)
@@ -48,8 +48,6 @@ def get_words_list(file_name):
 def my_app():
     words_list = get_words_list('tf.txt')
     histogram = create_histogram(words_list)
-    print histogram
-    print len(histogram)
     unique_words = get_unique_words(histogram)
     frequency = get_frequency('to', histogram)
     text_file = create_file('histogram.txt', histogram)
