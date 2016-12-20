@@ -37,23 +37,19 @@ def remove_punctuation(word_string):
             no_punctuation += character
     return no_punctuation
 
-def get_words_list(file_name, number_of_words):
+def get_words_list(file_name):
   f= open(file_name)
   lines = f.readlines()
   word_string = ' '.join(lines)
   no_punctuation = remove_punctuation(word_string)
   words_list = no_punctuation.split()
-  
-  #the benchmark list is created with this loop
-  benchmark_list = []
-  for index in range(0, number_of_words):
-      benchmark_list.append(words_list[index])
-  return benchmark_list
+  return words_list
 
 def my_app():
-    words_list = get_words_list('holmes.txt')
+    words_list = get_words_list('tf.txt')
     histogram = create_histogram(words_list)
-    # print histogram
+    print histogram
+    print len(histogram)
     unique_words = get_unique_words(histogram)
     frequency = get_frequency('to', histogram)
     text_file = create_file('histogram.txt', histogram)
