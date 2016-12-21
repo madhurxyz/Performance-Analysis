@@ -11,8 +11,12 @@ def performance(file_name):
     t100 = t1-t0
     print t100
 
+    t2 = time.time()
     ten_thousand_list = get_words_list(file_name, 100000)
     ten_thousand_hgram = create_histogram(ten_thousand_list)
+    t3 = time.time()
+    t10000 = t3-t2
+    print t10000
 
 if __name__ == '__main__':
     file_name = str(sys.argv[1])
