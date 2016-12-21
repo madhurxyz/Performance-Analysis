@@ -11,8 +11,8 @@ def performance(file_name):
     t100 = t1-t0
     print "The time to create 100 word histogram is: " + str(t100)
 
-    t2 = time.time()
     ten_thousand_list = get_words_list(file_name, 10000)
+    t2 = time.time()
     ten_thousand_hgram = create_histogram(ten_thousand_list)
     t3 = time.time()
     t10000 = t3-t2
