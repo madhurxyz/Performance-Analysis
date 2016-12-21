@@ -4,8 +4,8 @@ from histogram import get_words_list
 from histogram import create_histogram
 
 def performance(file_name):
-    t0 = time.time()
     hundred_list = get_words_list(file_name, 100)
+    t0 = time.time()
     hundred_hgram = create_histogram(hundred_list)
     t1 = time.time()
     t100 = t1-t0
