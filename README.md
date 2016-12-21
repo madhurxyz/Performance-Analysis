@@ -7,4 +7,5 @@ Unlike algorithm analysis which deals with time complexity, the goal of performa
 2. The program generates a 10,000-word histogram
 3. The program prints times for generating both
 4. A time comparison tells us how many orders of magnitude the 100-gram is faster than the 10,000-gram.
+5. This measurement can be contrasted with the algorithm analysis and time complexity to see if that hypothesis was correct.
 </snippet>
